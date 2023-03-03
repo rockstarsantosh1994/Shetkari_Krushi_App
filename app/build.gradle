@@ -3,6 +3,22 @@ plugins {
 }
 
 android {
+
+    signingConfigs {
+        release {
+            storeFile file('D:/StudioProjects/ShetkariKrushiApp/app/shetkariikrushi.jks')
+            storePassword 'Shetkari@123'
+            keyAlias = 'shetkari'
+            keyPassword 'Shetkari@123'
+        }
+        debug {
+            storeFile file('D:/StudioProjects/ShetkariKrushiApp/app/shetkariikrushi.jks')
+            storePassword 'Shetkari@123'
+            keyAlias = 'shetkari'
+            keyPassword 'Shetkari@123'
+        }
+    }
+
     compileSdk 32
 
     defaultConfig {
